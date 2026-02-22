@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply - Dmless</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Loading Job...</h1>
+        </header>
+
+        <section id="jd" class="job-description"></section>
+
+        <section id="quiz" class="quiz-section"></section>
+
+        <form id="resumeForm" class="resume-form" style="display: none;">
+            <h2>🎉 Congratulations! You passed all MCQs</h2>
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
+            <button type="submit">✅ Submit Application</button>
+        </form>
+    </div>
+    <script src="js/apply.js"></script>
+</body>
+
+</html>

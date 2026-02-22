@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dmless - Recruiter Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🔗 Dmless Dashboard</h1>
+            <p>Shareable hiring links with MCQ knockout</p>
+        </header>
+
+        <div class="metrics">
+            <div class="metric-card" id="total">
+                <h3>Applied</h3>
+                <span class="metric-value">0</span>
+            </div>
+            <div class="metric-card" id="knocked">
+                <h3>Knocked Out</h3>
+                <span class="metric-value">0</span>
+            </div>
+            <div class="metric-card" id="shortlisted">
+                <h3>Shortlisted</h3>
+                <span class="metric-value">0</span>
+            </div>
+        </div>
+
+        <section class="job-create">
+            <h2>➕ Create New Job</h2>
+            <form id="jobForm">
+                <input type="text" id="role" placeholder="Job Role (e.g. Frontend Developer)" required>
+                <textarea id="jd" placeholder="Job Description" rows="4" required></textarea>
+
+                <h3>5 MCQ Questions (Knockout Logic)</h3>
+                <div id="mcqs"></div>
+
+                <button type="submit">🚀 Generate Hiring Link</button>
+            </form>
+            <div id="link"></div>
+        </section>
+
+        <section class="applications">
+            <h2>📋 Applications</h2>
+            <table id="appsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Resume</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>
